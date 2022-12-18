@@ -1,0 +1,207 @@
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    font-family: tahoma;
+}
+  
+html{
+    scroll-behavior: smooth;
+}
+  
+body{
+    overflow-x: hidden;
+}
+
+/*h2 Main Text*/
+h2 {
+    color: #141414;
+    font: 8.2rem/0.85 "Montserrat", sans-serif;
+    position: absolute;
+    top: 40%;
+    width: 70%;
+    text-align:center;
+    transform: translate(-50%, -50%);
+    margin: -1.5rem auto;
+    -webkit-transform: scaleX(1.05);
+    transform: scaleX(1.05);
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #141414;
+    text-transform: uppercase;
+    font-weight: 900;
+    transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+    margin-left: 300px;
+}
+h2:hover{
+    cursor: pointer;
+    -webkit-text-fill-color: #141414;
+    transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+    -webkit-text-stroke-width: 4px;
+    transform: scaleX(1);
+    -webkit-text-stroke-color: #141414;
+}
+
+/*Down Scroll Button*/
+#down a {
+    padding-top: 60px;
+}
+  #down a span {
+    position: absolute;
+    margin-top: 750px;
+    top: 0;
+    left: 50%;
+    width: 30px;
+    height: 50px;
+    margin-left: -15px;
+    box-sizing: border-box;
+  }
+  #down a span::before {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    content: '';
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 100%;
+    -webkit-animation: sdb10 2s infinite;
+    animation: sdb10 2s infinite;
+    box-sizing: border-box;
+  }
+  @-webkit-keyframes sdb10 {
+    0% {
+      -webkit-transform: translate(0, 0);
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    80% {
+      -webkit-transform: translate(0, 20px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes sdb10 {
+    0% {
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    80% {
+      transform: translate(0, 20px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+/*Down Scroll Button END*/
+
+/*Section*/
+.sec{
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    color:#777;
+    background: #f9f9f9;
+    letter-spacing: 2px;
+}
+.sec:nth-child(odd){
+    background: #ddd;
+}
+/*Section END*/
+  
+/*Navbar*/
+.navbar{
+    position: fixed;
+    top:50%; right:30px;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+  
+.navbar ul{
+    list-style: none;
+    padding:0; margin: 0;
+}
+.navbar ul li{
+    width: 200px;
+    position: relative;
+    text-align: right;
+}
+.navbar ul li .dot{
+    color: #141414;
+    display: block;
+    padding:30px 0;
+}
+/*Navbar END*/
+
+/*Navbar Names*/
+.navbar ul li .dot span{
+    display: inline-block;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding:10px 10px;
+    margin-right: 15px;
+    transform: translateX(30px);
+    opacity: 0;
+    margin-top: -4px;
+}
+  
+.navbar ul li:hover .dot span{
+    transform: translateX(0px);
+    opacity: 1;
+}
+  
+.navbar ul li .dot span::before{
+    content: '';
+    position: absolute;
+    top:50%; right:0;
+    transform: translate(7px, -50%);
+    display: block;
+}
+
+.navbar ul li .dot::before,
+.navbar ul li .dot::after{
+    content: '';
+    position: absolute;
+    top:50%;
+    border-radius: 50%;
+    display: block;
+    transition: .2s ease-out;
+}
+.navbar ul li .dot::before{
+    height:4px;
+    width: 4px;
+    border: 2px solid #141414;
+    right:0;
+    transform: translateY(-50%);
+}
+.navbar ul li .dot.active::before,
+.navbar ul li:hover .dot::before{
+    border-color: #141414;
+    background: #141414;
+}
+.navbar ul li .dot::after{
+    height:10px;
+    width: 10px;
+    border: 1px solid #141414;
+    right:-2px;
+    transform: translateY(-50%) scale(0);
+}
+.navbar ul li .dot.active::after,
+.navbar ul li:hover .dot::after{
+    transform: translateY(-50%) scale(1);
+}
+/*Navbar Names END*/
