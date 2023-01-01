@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/114eaabd95.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="/js/script.js"></script>
+    <title>Portfolio</title>
+</head>
+<body data-spy="scroll" data-target="#navbar-example">
+  
+  <div class="wrapper" >
+
+    <!-- Navbar -->
+    <nav class="nav__wrapper" id="navbar-example">
+      <ul class="nav">
+        
+        <!-- Home Section -->
+        <li role="presentation" class="active">
+          <a href="#home">
+            <span class="nav__counter">01</span>
+            <h3 class="nav__title">Home Page</h3>
+            <p class="nav__body"> Home Section </p>
+          </a>
+        </li>
+        <!-- Home Section END -->
+
+        <!-- About Section -->
+        <li role="presentation">
+          <a href="#about">
+            <span class="nav__counter">02</span>
+            <h3 class="nav__title">About Page</h3>
+            <p class="nav__body"> About Section </p>
+          </a>
+        </li>
+        <!-- About Section END -->
+
+        <!-- Skills Section -->        
+        <li role="presentation">
+          <a href="#skills">
+            <span class="nav__counter">03</span>
+            <h3 class="nav__title">Skills Page</h3>
+            <p class="nav__body"> Skills Section </p>
+          </a>
+        </li>
+        <!-- Skills Section END -->        
+        
+        <!-- Timeline Section -->
+        <li role="presentation">
+          <a href="#timeline">
+            <span class="nav__counter">04</span>
+            <h3 class="nav__title">Timeline Page</h3>
+            <p class="nav__body"> Timeline Section </p>
+          </a>
+        </li>
+        <!-- Timeline Section END -->
+
+        <!-- Contact Section -->
+        <li role="presentation">
+          <a href="#contact">
+            <span class="nav__counter">05</span>
+            <h3 class="nav__title">Contact Page</h3>
+            <p class="nav__body"> Contact Section </p>
+          </a>
+        </li>
+        <!-- Contact Section END -->
+
+        <!-- Diamond Shape -->
+        <li class="nav-event">
+          <label class="nav-event-icon"></label>
+        </li> 
+        <!-- Diamond Shape END -->
+      </ul>
+
+    </nav>
+    <!-- Navbar END -->
+
+    <!-- Sections -->
+    <section class="section section1" id="home">
+    
+    </section>
+
+    <section class="section section2" id="about">
+
+    </section>
+
+    <section class="section section3" id="skills">
+    
+    </section>
+
+    <section class="section section4" id="timeline">
+
+    </section>
+
+    <section class="section section5" id="contact">
+
+    </section>
+    <!-- Sections END-->
+
+  </div>
+
+  <!-- Home Page -->
+
+  <!-- Main Text, Typing Text -->
+  <div class="maintext">
+    <!-- Main Text -->
+    <h2>
+      Diar
+    </h2>
+    <!-- Main Text END -->
+    
+    <!-- Typing Text -->
+    <p>
+      I'm a beginner-level student from Finland
+    </p>
+    <!-- Typing Text END -->
+  </div>
+  <!-- Main Text, Typing Text END -->
+  
+  <!-- Down Scroll Button -->
+  <a href="#down"><span></span></a>
+  </section>
+  <section id="down" class="demo">
+  <a href="#about"><p>About Me</p><span></span></a>
+  </section>
+  <!-- Down Scroll Button END -->
+  
+  <!-- Top Name -->
+  <section id="a">
+  <a href="#" class="sitename">Diar</a>
+  </section>
+  <!-- Top Name END -->
+
+  <!-- Home Page END -->
+
+
+  <!-- About Me Page -->
+
+  <!-- About Me Main Text-->
+  <div class="aboutme">
+    <h2>
+      About Me
+    </h2>
+  </div>
+  <!-- About Me Main Text END -->
+
+  <!-- About Me Text -->  
+  <div class="aboutmetext">
+    <h2>
+      Hello my name is Diar Muradi. Im 17 Years old from Iraq currently stated in Finland
+      I love to do stuff i love ofc anyways these are just texts to fill up the thingi and aldalda
+      yeee omfg so cool dangggggggggg ooooo 0192 dajdj20000000000d djjjjjjjjjjjj2d2
+    </h2>
+  </div>
+  <!-- About Me Text END -->
+
+  <!-- About Me Page END -->
+
+  <!-- Down Scroll Button Script -->
+  <script>
+    // Get all of the dot elements
+  const dots = document.querySelectorAll('.dot');
+
+  // Add a click event listener to each dot element
+  dots.forEach(dot => {
+  dot.addEventListener('click', function() {
+    // Remove the "active" class from all of the dots
+    dots.forEach(dot => {
+      dot.classList.remove('active');
+    });
+    // Add the "active" class to the clicked dot
+    this.classList.add('active');
+  });
+  });
+  </script>
+  <!-- Down Scroll Button Script END -->
+
+</body>
+
+</html>

@@ -1,0 +1,305 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*Fonts END*/
+
+/*Htm*/
+html{
+  scroll-behavior: smooth;
+}
+/*Html END*/
+
+/*Body*/
+body{
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  background: #ffffff;
+}
+/*Body END*/
+
+/* H2 Main Text*/
+.maintext h2{
+  color: #141414;
+  font-family:"Montserrat", sans-serif;
+  font-size: 150px;
+  position: absolute;
+  top: 32%;
+  width: 30%;
+  right: 33%;
+  text-align:center;
+  transform: translate(-50%, -50%);
+  margin: -1.5rem auto;
+  -webkit-transform: scaleX(1.05);
+  transform: scaleX(1.05);
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #141414;
+  text-transform: uppercase;
+  font-weight: 900;
+  transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+  margin-left: 300px;
+}
+.maintext h2:hover{
+  cursor: pointer;
+  -webkit-text-fill-color: #141414;
+  transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-text-stroke-width: 4px;
+  transform: scaleX(1);
+  -webkit-text-stroke-color: #141414;
+  position: absolute;
+}
+/* H2 Main Text END */
+
+/* Typing Text */
+.maintext p{
+width: 31.6ch;
+color: #141414;
+animation: typing 2s steps(32), blink .5s step-end infinite alternate;
+white-space: nowrap;
+overflow: hidden;
+border-right: 2px solid;
+font-family: 'Montserrat', sans-serif;
+font-weight: 400;
+font-size: 2.1em;
+position: absolute;
+top: 48%;
+left: 36%;
+}
+
+@keyframes typing {
+from {
+  width: 0
+}
+}
+  
+@keyframes blink {
+50% {
+  border-color: transparent
+}
+}
+/* Typing Text END */
+
+/* Down Scroll Text */
+#down p {
+color: #141414;
+font-family: 'Montserrat', sans-serif;
+font-weight: 400;
+font-size: 20px;
+position: absolute;
+top: 90%;
+width: 7%;
+right: 885px;
+text-align:center;
+  border: 1.5px solid black;
+  padding: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+/* Down Scroll Text END */
+
+/* Top Name */
+a.sitename { 
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  text-decoration: none;
+  float: left;
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+a.sitename:after {
+  content: '/Muradi';
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 27px;
+  position: absolute;
+  margin: 1.8vh 0px;
+  opacity: 0;
+  visibility: hidden;
+  transition: inherit
+}
+a.sitename:hover {
+  color: rgb(12, 3, 3);
+}
+a.sitename:hover:after {
+  visibility: visible;
+  opacity: 1;
+}
+/* Top Name END */
+
+/* About Me Main Text*/
+.aboutme h2{
+  color: #141414;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  position: absolute;
+  text-align: center;
+  margin-top: -292%;
+  right: 845px;
+
+}
+.aboutmetext h2{
+  color: #141414;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  position: absolute;
+  text-align: center;
+  margin-top: -285%;
+  max-width: 900px;
+  right: 500px;
+}
+/* About Me Main Text END*/
+
+/* Wrapper*/
+.wrapper {
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: #fff;
+  position: relative;
+}
+/* Wrapper END */
+
+/* Section */
+section {
+  height: 100vh;
+  font-size: 40px;
+  font-weight: 100;
+  background-color: #22A7F0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+/* Section END */
+
+/* Sections */
+section:nth-child(1) {
+  background: #ffffff
+}
+section:nth-child(2) {
+  background: #ffffff
+}
+section:nth-child(3) {
+  background: #ffffff
+}
+section:nth-child(4) {
+  background: #ffffff
+}
+section:nth-child(5) {
+  background: #ffffff
+}
+section:nth-child(6) {
+  background: #ffffff
+}
+section:nth-child(7) {
+  background: #ffffff
+}
+/* Sections END */  
+
+/* Navbar */
+.nav__wrapper {
+  position: fixed;
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  float: right;
+}
+.nav {
+  position: absolute;
+  justify-content: center;;
+  text-align: right;
+  right: -1780px;
+  top: 290px;
+}
+.nav__counter {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  transition: all 0.15s ease-out;
+}
+.nav__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-size: 32px;
+  margin: 0 0 0.25em;
+  width: 300px;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: height 0.3s ease-out, opacity 0.2s ease-out;
+}
+.nav__body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  font-size: 18px;
+  width: 300px;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: height 0.3s ease-out, opacity 0.2s ease-out;
+}
+.nav li {
+  position: relative;
+  transition: all 0.3s ease-out;
+  margin-bottom: 1em;
+}
+.nav li:after {
+  content: "";
+  display: block;
+  border-top: 1px solid #141414;
+
+  position: absolute;
+  left: 330px;
+  top: 15px;
+}
+.nav li a {
+  display: block;
+  padding: 0;
+  color: #141414;
+  transition: all 0.15s ease-out;
+}
+.nav li a:hover {
+  background-color: transparent;
+  padding-left: 1em;
+}
+.nav li a:focus {
+  background-color: transparent;
+}
+.nav li.active {
+  pointer-events: none;
+  padding-left: 1em;
+}
+.nav li.active:after {
+  width: 30px;
+  height: 400px;
+  top: 20px;
+}
+.nav li.active .nav__counter {
+  font-size: 32px;
+}
+.nav li.active .nav__title {
+  height: 40px;
+  opacity: 1;
+  overflow: visible;
+}
+.nav li.active .nav__body {
+  height: 100px;
+  opacity: 1;
+  overflow: visible;
+}
+/* Navbar END */
+
+/* Make the Website Responsive MEDIA*/
+/* Make the Website Responsive MEDIA END*/
+
+/*# sourceMappingURL=main.css.map */
